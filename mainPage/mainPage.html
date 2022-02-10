@@ -19,7 +19,10 @@
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/loopStyle.css">
     <link rel="stylesheet" href="./css/mainCourses.css">
-
+    <script src="../interaction/Team_members.js" defer type="module"></script>
+    <script src="../interaction/courses.js" defer type="module"></script>
+    <script src="../interaction/About_us.js" type="module" defer></script>
+    <script src="../interaction/events.js"type="module" defer ></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js" defer></script>
     <title>Ana səhifə</title>
@@ -151,25 +154,14 @@
             <div id="about-section" class="col-lg-6 col-md-6 col-sm-12">
                 <div class="list_facts_wrap">
                     <div class="sec-heading mb-3">
-                        <h2>İsrail Azərbaycan Təlim Mərkəzi</h2>
+                        <h2 id="about_title"></h2>
                     </div>
 
                     <div class="list_facts">
                         <div class="list_facts_caption">
 
                             <p class="aboutParagraph" style="font-size: 18px">
-                                İsrail-Azərbaycan Təlim Mərkəzi İsrail mütəxəssisləri tərəfindən informasiya
-                                texnologiyaları sahəsinə dair hazırlanmış xüsusi proqramlar vasitəsilə tədris prosesi
-                                həyata keçirir. 2019-cu ildə fəaliyyətə başlayan Mərkəzin əsas məqsədi Azərbaycanda İT
-                                sahəsində fəaliyyət göstərən yerli və beynəlxalq şirkətlərin kadr ehtiyacını qarşılamaq
-                                və bu sahədə karyera qurmaq istəyənlərə təlim paketləri təklif etməkdir. Təlim mərkəzi
-                                Azərbaycan Dövlət Neft və Sənaye Universiteti və İsrail Azərbaycan Ticarət Palatasının
-                                birgə əməkdaşlığı nəticəsində yaranmışdır. Təlim mərkəzimiz Proqramlaşdırma, Sistem
-                                inzibatçılığı, Qrafik dizaynerlik, Verilənlərin emalı və İnformasiya təhlükəsizliyi
-                                istiqamətində təlimlər həyata keçirir. Təlimlərimizi uğurla bitirən məzunlarımız
-                                beynəlxalq sertifikatlar əldə edə bilərlər.
-
-                                Hədəfimiz regionda peşəkar təlim verən mərkəzə çevrilməkdir!
+                               
                             </p>
 
                         </div>
@@ -191,7 +183,7 @@
             <p class="par-name">Kurslarımız</p>
         </div>
         <div class="courses-item">
-            <div class="course-platform row justify-content-center">
+            <div class="course-platform row justify-content-center" id="inter_courses">
                 <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
                     <img src="./img/8.png" alt="" class="img-fluid  mr-3 rounded ">
                     <div class="courses-info">
@@ -256,7 +248,7 @@
                     </div>
                 </div>
 
-                <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
+                <!-- <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
                     <img src="./img/k4.png" alt="" class="img-fluid  mr-3 rounded ">
                     <div class="courses-info">
                         <h4>FrontEnd</h4>
@@ -270,9 +262,9 @@
                                     Ətraflı</strong> <i class="fas fa-arrow-circle-right ml-2 "></i></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
+                <!-- <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
                     <img src="./img/k5.png" alt="" class="img-fluid  mr-3 rounded ">
                     <div class="courses-info">
                         <h4>Mobile Development</h4>
@@ -287,7 +279,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -300,9 +292,9 @@
             <p class="pt-1" id="haqqimizda2">Haqqımızda</p>
             <p id="komanda_uzvleri">Komanda Üzvləri</p>
         </div>
-        <div class="swiper mySwiper cards-container">
-            <div class="swiper-wrapper content">
-
+        <div class="swiper mySwiper cards-container" >
+            <div class="swiper-wrapper content" id="inter_teamMembers">
+<!-- 
                 <div class="swiper-slide team-card">
                     <div class="card-content">
                         <div class="image">
@@ -355,9 +347,9 @@
                             <button class="aboutMe">Haqqında</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="swiper-slide team-card">
+                <!-- <div class="swiper-slide team-card">
                     <div class="card-content">
                         <div class="image">
                             <img src="./img/t3.jpg" alt="">
@@ -382,9 +374,9 @@
                             <button class="aboutMe">Haqqında</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="swiper-slide team-card">
+                <!-- <div class="swiper-slide team-card">
                     <div class="card-content">
                         <div class="image">
                             <img src="./img/t4.jpg" alt="">
@@ -409,9 +401,9 @@
                             <button class="aboutMe">Haqqında</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="swiper-slide team-card">
+                <!-- <div class="swiper-slide team-card">
                     <div class="card-content">
                         <div class="image">
                             <img src="./img/t6.jpg" alt="">
@@ -436,9 +428,9 @@
                             <button class="aboutMe">Haqqında</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="swiper-slide team-card">
+                <!-- <div class="swiper-slide team-card">
                     <div class="card-content">
                         <div class="image">
                             <img src="./img/t7.jpg" alt="">
@@ -463,7 +455,7 @@
                             <button class="aboutMe">Haqqında</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -483,8 +475,8 @@
                 </div>
             </div>
 
-            <div class="row pl-lg-3 pl-sm-1">
-                <div class="col-lg-4 col-md-4 col-sm-12 mb-4 events">
+            <div class="row pl-lg-3 pl-sm-1"  id="inter_events">
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12 mb-4 events">
                     <div class="articles">
                         <div class="articles_grid_thumb">
                             <a href="mainEventsIATC.html"><img src="./img/11111.png" class="img-fluid" alt="" /></a>
@@ -501,7 +493,7 @@
                             <a href="mainEventsWebDev.html" target="_blank"><img src="./img/ff5f7da7749bd713957f0c23b505a55c.jpg" class="img-fluid"
                                     alt="" /></a>
                         </div>
-
+                                
                         <div class="articles_grid_caption event-name">
                             <h4>
                                 İsrail Azərbaycan Təlim Mərkəzində veb proqramlaşdırma
@@ -510,7 +502,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!--Events ends-->

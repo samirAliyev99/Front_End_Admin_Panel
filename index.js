@@ -50,8 +50,10 @@ document.querySelector("#connection_submit").addEventListener("click",function()
            const td3 = $('<td>').html(name);
            const td4 = $('<td>');
 
+
            tr.append(td1, td2, td3,td4);
            $('tbody').append(tr);
+
 
         // button remove
         const button1 = $('<button>',{
