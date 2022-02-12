@@ -10,7 +10,7 @@ var index=0;
     
     let obj=snapshot.val();
     let member_info=[]
-    
+    let sending_data=[]
     // Getting data from database
     for (var [key,values] of Object.entries(obj)){
 
@@ -19,6 +19,27 @@ var index=0;
 
             member_info.push(name);
 
+
+
+
+            // // sending data to pages
+
+            // $('.clicked').click(function(){
+    
+
+            //     var a=$(this).attr("data_head")
+            //     var b=$(this).attr("data_content")
+                
+            //     location.href="mainEventsIATC.html"
+            //     sessionStorage.setItem([a,b]);
+            
+            // })
+
+
+
+
+
+
    }
    
 //             // To send front starts
@@ -26,12 +47,20 @@ var index=0;
                 class: 'shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1'
                });
 
+
+        
                $("#inter_courses").append(div1);
+
 
 
              const div2=  $('<img>', {
                 class: "img-fluid  mr-3 rounded",
-                src:images[index]
+                src:images[index],
+                class:"clicked_course",
+                data_general:member_info[2],
+                data_participants:member_info[4],
+                data_program:member_info[5],
+                data_skills:member_info[7]
                });
 
                div1.append(div2);
@@ -67,80 +96,40 @@ var index=0;
 
 
             // link facebook
-             const div6=  $('<div>', {
-                 class:"time",
-                 text:"15 həftə",
-                 
+            const classTime = $('<div>', {
+                class: "time row"
             });
-
-            div3.append(div6)
-
-            const elave=  $('<div>', {
-            
-                text:"30 nefer",
-                
-           });
-
-           div3.append(elave)
-            
-            const div7=  $('<i>', {
-                class:"fas fa-desktop",
-                });
-            
-            
-            div6.append(div7);
-
-
-
-            // link twitter
-
-
-            const div8=  $('<i>', {
-                class:"fas fa-users ml-5"
+            div3.append(classTime);
+            const p1 = $('<p>', {
+                class: "course-info"
             });
-            
-            
-            div6.append(div8);
-
-
-            // link linkedin
-
-            const div9=  $('<div>', {
-                class:"float-right mt-4"
+            classTime.append(p1);
+            const week = $('<span>', {
+                class: "week"
+            })
+            p1.append(week);
+            const div7 = $('<i>', {
+                class: "fas fa-desktop ml-3",
             });
-
-            div3.append(div9)
-
-
-
-            const div10=  $('<a>', {
-                class:"detailed",
-                href:"mainBackend.html"
+            week.append(div7);
+            const spanWeek = $('<span>', {
+                text: member_info[1]+" həftə"
             });
-            
-            
-            div9.append(div10);
-
-
-            // name profession
-            const div11=  $('<strong>', {
-                class:"my-auto",
-                text:"Ətraflı"
+            week.append(spanWeek);
+            const student = $('<span>', {
+                class: "student"
             });
-
-
-
-
-            div10.append(div11);
-
-
-
-            const div12= $('<i>', {
-                class:"fas fa-arrow-circle-right ml-2 ",
+            p1.append(student)
+            const div8 = $('<i>', {
+                class: "fas fa-users ml-5"
             });
-
-            div10.append(div12)
+            student.append(div8);
+            const spanStudent = $('<span>', {
+                text: member_info[6]+" nəfər"
+            });
         
+            student.append(spanStudent);
+
 
 
         
@@ -152,4 +141,36 @@ var index=0;
 }
 
 
-})
+
+
+
+
+
+
+            
+            $('.clicked_course').click(function(){
+                
+
+
+                var general=$(this).attr("data_general")
+                var participants=$(this).attr("data_participants")
+                var program=$(this).attr("data_program")
+                var skilss=$(this).attr("data_skills")
+
+            
+                sending_data.push(general)
+
+                sending_data.push(participants)
+                sending_data.push(program)
+                sending_data.push(skilss)
+
+
+                sessionStorage.setItem("key", sending_data)
+                location.href="../mainPage/mainFullstack.html";
+
+
+             }) 
+
+             console.log(sending_data)
+
+            })

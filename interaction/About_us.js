@@ -17,7 +17,7 @@ const branch_about=ref(db,'/About_us');
         
            
 
-            console.log(name,key1);
+           // console.log(name,key1);
 
             // To send front ends
 
