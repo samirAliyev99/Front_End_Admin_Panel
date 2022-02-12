@@ -1,0 +1,17 @@
+body {
+    background: rgb(248, 249, 250);
+}
+
+.articles {
+    margin-bottom: 4em;
+}
+
+#news_section {
+    margin: 7em auto 4em auto;
+}
+
+@media (max-width: 992px) {
+    #news_section {
+        margin: 11.5em auto;
+    }
+}

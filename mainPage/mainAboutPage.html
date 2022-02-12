@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <link rel="stylesheet" href="./css/loginStyle.css">
-    <link rel="stylesheet" href="./css/navStyle.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navStyle.css">
+    <link rel="stylesheet" href="./css/aboutPage.css">
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js" defer></script>
-    <title>Qeydiyyat Formu</title>
+    <title>Haqqımızda</title>
 </head>
 
 <body>
+
     <!--Nav begins-->
     <nav id="nav">
         <div class=" d-flex ">
@@ -45,58 +46,49 @@
         </div>
     </nav>
     <!--Nav ends-->
-    <section id="login-form">
-    <div class="login-box">
-        <h2>Qeydiyyat Formu</h2>
-        <form action="#">
-            <div class="user-box dropdown">
-                <div class="dropdown-select">
-                    <span class="select">
-                        Select a course
-                    </span>
-                    <i class="fa fa-caret-down icon"></i>
-                </div>
-                <div class="dropdown-list">
-                    <div class="dropdown-list-item" data-course="Back End">
-                        Back End
-                    </div>
-                    <div class="dropdown-list-item" data-course="Front End">
-                        Front End
-                    </div>
-                    <div class="dropdown-list-item" data-course="Full Stack">
-                        Full Stack
-                    </div>
-                    <div class="dropdown-list-item" data-course="UI /UX Design">
-                        UI /UX Design
-                    </div>
-                    <div class="dropdown-list-item" data-course="Mobile Development">
-                        Mobile Development
-                    </div>
-                    <div class="dropdown-list-item" data-course="Digital Marketing">
-                        Digital Marketing
-                    </div>
-                </div>
-            </div>
-            <div class="user-box">
-                <input type="text" name="name" id="name" required>
-                <label for="name">Full Name</label>
-            </div>
-            <div class="user-box">
-                <input type="tel" name="tel" id="tel" required>
-                <label for="tel">Phone Number</label>
-            </div>
-            <div class="user-box">
-                <input type="email" name="email" id="email" required>
-                <label for="email">Email</label>
-            </div>
-            <a href>
-                Send 
-            </a>
-        </form>
+
+    <div class="container">
+        <h1 id="about" class="about breadcrumb-title">Haqqımızda</h1>
     </div>
-</section>
-     <!--Footer begins-->
-     <footer class="footer">
+    <div class="container aboutPage">
+        <div class="row align-items-center">
+            <div id="about-section" class="col-lg-6 col-md-12 col-sm-12">
+                <div class="list_facts_wrap">
+                    <div class="sec-heading mb-3">
+                        <h2 id="about-h2">İsrail Azərbaycan Təlim Mərkəzi</h2>
+                    </div>
+
+                    <div class="list_facts">
+                        <div class="list_facts_caption">
+
+                            <p class="aboutParagraph" style="font-size: 18px">
+                                İsrail-Azərbaycan Təlim Mərkəzi İsrail mütəxəssisləri tərəfindən informasiya
+                                texnologiyaları sahəsinə dair hazırlanmış xüsusi proqramlar vasitəsilə tədris prosesi
+                                həyata keçirir. 2019-cu ildə fəaliyyətə başlayan Mərkəzin əsas məqsədi Azərbaycanda İT
+                                sahəsində fəaliyyət göstərən yerli və beynəlxalq şirkətlərin kadr ehtiyacını qarşılamaq
+                                və bu sahədə karyera qurmaq istəyənlərə təlim paketləri təklif etməkdir. Təlim mərkəzi
+                                Azərbaycan Dövlət Neft və Sənaye Universiteti və İsrail Azərbaycan Ticarət Palatasının
+                                birgə əməkdaşlığı nəticəsində yaranmışdır. Təlim mərkəzimiz Proqramlaşdırma, Sistem
+                                inzibatçılığı, Qrafik dizaynerlik, Verilənlərin emalı və İnformasiya təhlükəsizliyi
+                                istiqamətində təlimlər həyata keçirir. Təlimlərimizi uğurla bitirən məzunlarımız
+                                beynəlxalq sertifikatlar əldə edə bilərlər.
+
+                                Hədəfimiz regionda peşəkar təlim verən mərkəzə çevrilməkdir!
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img id="img1" src="./img/edu_2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Footer begins-->
+    <footer class="footer">
         <div>
             <div>
                 <div class="row align-items-center">

@@ -26,3 +26,17 @@ p{
     margin: 10px;
     font-size: 30px;
 }
+
+@media (max-width: 992px) {
+    .contact{
+        margin-top: 13em;
+        margin-bottom: 14em;
+    }
+
+    .header-contact{
+        height: 22em;
+        padding-top: 15em;
+        padding-bottom: 15em;
+    }
+
+}
