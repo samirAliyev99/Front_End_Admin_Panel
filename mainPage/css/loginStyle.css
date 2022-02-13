@@ -113,6 +113,48 @@
     padding: .4em;
 }
 
+@media(max-width: 992px) {
+    .login-box {
+        margin-top: 2em;
+        width: 35em;
+    }
+}
+
+@media (max-width: 540px) {
+    .login-box {
+        margin-top: .4em;
+        width: 25em;
+    }
+}
+
+@media (max-width: 450px) {
+    .login-box {
+        width: 23.5em;
+    }
+}
+
+@media (max-width: 360px) {
+    .login-box {
+        width: 20em;
+    }
+
+    .login-box h2 {
+        font-size: 1.4em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
 footer {
     background-color:#272727;
     font-size: 1em;
@@ -178,20 +220,4 @@ footer {
 
 footer li.icon-link:not(:last-child) {
     margin-right: 1.5em;
-}
-
-@media(max-width: 992px) {
-    #about-section {
-        text-align: center;
-    }
-
-    .about {
-        padding-top: 1em;
-    }
-}
-
-@media (max-width: 992px){
-    .login-box {
-        width: 35em;
-    }
 }

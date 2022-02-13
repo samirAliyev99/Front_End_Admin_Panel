@@ -33,7 +33,6 @@
     display: block;
     top: 93.2%;
     margin-left: 9em;
-    margin-bottom: 20em;
 }
 
 .company-slider::before,
@@ -78,7 +77,63 @@
     .companies {
         height: 100px;
         width: 90%;
-        top: 63.2%;
+        top: 33%;
         margin-left: 2.4em;
+    }
+}
+
+@media (max-width: 820px) {
+    .companies {
+        top: 38%;
+    } 
+}
+
+@media (max-width: 768px) {
+    .companies {
+        width: 90%;
+        top: 29.7%;
+    }
+}
+
+@media (max-width: 540px) {
+    .companies {
+        height: 75px;
+        top: 41%;
+        margin-left: 1.4em;
+    }
+
+    .company-slider .slide {
+        height: 75px;
+        width: 250px;
+    }
+
+    .slide img {
+        height: 75;
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .companies {
+        height: 55px;
+        top: 25%;
+        margin-left: 1.3em;
+    }
+
+    .company-slider .slide {
+        height: 55px;
+        width: 250px;
+    }
+
+    .slide img {
+        height: 60px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .companies {
+        top: 30%;
+        margin-left: 1.1em;
     }
 }
