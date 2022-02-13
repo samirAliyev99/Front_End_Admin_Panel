@@ -5,7 +5,12 @@ const check=ref(db,'/namePassword');
 
 document.querySelector("#send").addEventListener("click",function(){
 
-    var course_name = $('#course_name :selected').text();
+    var course_name = "";
+
+    $('.dropdown-list-item').on('click', function() {
+        var selectedCourse = $('.dropdown-select span').text($(this).attr('data-course'));
+        course_name = $('#course_name :selected').text(selectedCourse);
+    });
 
 
 

@@ -121,7 +121,7 @@ var index=0;
             div5.append(div10)
 
             const div11=  $('<i>', {
-                class:"fab fa-twitter"
+                class:"fab fa-linkedin"
             });
             
             

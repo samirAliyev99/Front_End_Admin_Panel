@@ -41,6 +41,26 @@ var index=0;
 
 
    }
+
+   /*
+   <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
+   <img src="./img/8.png" alt="" class="img-fluid  mr-3 rounded ">
+
+   <div class="courses-info">
+       <h4>BackEnd</h4>
+       Müəllim: <strong>Asaf Amir</strong>
+       <div class="time">
+           <p class="course-info"><span class="week"><i class="fas fa-desktop ml-3"></i><span>15
+                       həftə</span></span>
+               <span class="student"><i class="fas fa-users ml-5"></i><span>30 tələbə</span></span></p>
+       </div>
+       <div class=" float-right mt-4">
+           <a href="mainBackend.html" class="detailed" target="_blank"> <strong class="my-auto ">
+                   Ətraflı</strong> <i class="fas fa-arrow-circle-right ml-2"></i></a>
+       </div>
+   </div>
+</div>
+*/
    
 //             // To send front starts
             const div1= $('<div>', {
@@ -54,9 +74,8 @@ var index=0;
 
 
              const div2=  $('<img>', {
-                class: "img-fluid  mr-3 rounded",
+                class: "img-fluid  mr-3 rounded clicked_course",
                 src:images[index],
-                class:"clicked_course",
                 data_general:member_info[2],
                 data_participants:member_info[4],
                 data_program:member_info[5],
@@ -79,7 +98,7 @@ var index=0;
 
 
                
-               const muellim=$('<p>', {
+               const muellim=$('<span>', {
                 text:"Müəllim:"
                });
 
@@ -129,6 +148,41 @@ var index=0;
             });
         
             student.append(spanStudent);
+
+            const div9 = $('<div>', {
+                class: "float-right mt-4"
+            });
+    
+            div3.append(div9)
+    
+    
+    
+            const div10 = $('<a>', {
+                class: "detailed",
+                src:images[index]
+            });
+    
+    
+            div9.append(div10);
+
+            const div11 = $('<strong>', {
+                class: "my-auto",
+                text: "Ətraflı"
+            });
+    
+    
+    
+    
+            div10.append(div11);
+    
+    
+    
+            const div12 = $('<i>', {
+                class: "fas fa-arrow-circle-right ml-2 "
+            });
+    
+            div10.append(div12)
+    
 
 
 
