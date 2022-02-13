@@ -158,19 +158,26 @@ var index=0;
                 var skilss=$(this).attr("data_skills")
 
             
-                sending_data.push(general)
+                // sending_data.push(general)
 
-                sending_data.push(participants)
-                sending_data.push(program)
-                sending_data.push(skilss)
+                // sending_data.push(participants)
+                // sending_data.push(program)
+                // sending_data.push(skilss)
 
 
-                sessionStorage.setItem("key", sending_data)
+                sessionStorage.setItem("general",general)
+                
+                sessionStorage.setItem("participants",participants)
+                sessionStorage.setItem("program",program)
+                sessionStorage.setItem("skills",skilss)
+
+
+                // sessionStorage.setItem("key", JSON.stringify(sending_data))
                 location.href="../mainPage/mainFullstack.html";
 
 
              }) 
 
-             console.log(sending_data)
+            // console.log(sending_data)
 
             })
