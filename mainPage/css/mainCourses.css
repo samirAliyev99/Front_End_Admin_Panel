@@ -55,6 +55,7 @@
 .courses-info {
     font-family: 'Manrope', sans-serif;
 }
+
 .courses-card img {
     width: 45%;
     object-fit: contain;
@@ -110,54 +111,6 @@ h4 {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------------------------------------------------------------------------------*/
 
 .backend img,
@@ -210,7 +163,6 @@ h4 {
     margin: 20px 15px;
     transition: all .3s ease;
     cursor: pointer;
-
 }
 
 .media-icons i:hover {
@@ -220,4 +172,39 @@ h4 {
 .teacher h4 {
     color: #333c56;
     font-weight: bold;
+}
+
+@media (max-width: 540px) {
+    .courses-div {
+        flex-direction: column;
+    }
+
+    .backend img,
+    .design img,
+    .fullstack img,
+    .marketing img,
+    .frontend img,
+    .mobile img {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .teacher {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .teacher img {
+        width: 80%;
+        height: 9em;
+        margin-bottom: 1em;
+    }
+
+    .media-icons i {
+        margin: .5em 1em;
+    }
+
 }

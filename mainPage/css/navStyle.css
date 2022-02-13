@@ -51,15 +51,16 @@ i {
         width: 100%;
         float: none;
         text-align: center;
-        border-bottom: 1px solid #d6d5d5;
-        padding-left: 0;
         background-color: #192459;
     }
 
     .links ul li:hover {
-        opacity: 0.9;
         font-size: .9em;
         transition: .3s;
+    }
+
+    .links ul li a{
+        padding: 1.7em .4em;
     }
 
     .links ul {
@@ -76,11 +77,13 @@ i {
         top: 20px;
         right: 20px;
         color: white;
+        border: none;
         font-size: 20px;
     }
 
 
-    .links.responsive li:not(:first-child) {
+    .responsive ul li:not(:first-child) {
+        padding: 1em 0;
         display: none;
     }
 
