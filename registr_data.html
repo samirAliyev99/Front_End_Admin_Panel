@@ -11,11 +11,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="registr.js" defer type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="navigation">
         <ul>
             <li>
@@ -56,13 +60,13 @@
             </li>
             <li>
                 <a href="#">
-                <span class="icon"><i class="fas fa-question-circle"></i></span>
-                <span class="title">Registr Data</span>
+                <span class="icon"><i class="fa-solid fa-database"></i></span>
+                <span class="title">Register Data</span>
                 </a>
             </li>
             <li>
                 <a onclick="sessionStorage.clear()" href="">
-                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
                 <span class="title">Log out</span>
                 </a>
             </li>
@@ -72,10 +76,10 @@
 
     <div class="main">
         <div class="topbar">
-            <div class="toggle" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
+            <div class="toggle" onclick="toggleMenu();"></div>
         </div>
 
-     <h1>Registr Data</h1>
+     <h1 id="register_id">Register Data</h1>
 
 
     <div class="database_info_events">
