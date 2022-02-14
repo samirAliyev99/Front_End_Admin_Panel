@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
-    <script type="module" src="About_us.js" defer></script>
+    <title>Registr Data</title>
     <script type="module" src="firebase.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="toggle.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+    <script src="registr.js" defer type="module"></script>
 </head>
 <body>
-
-
 
 
   <div class="container">
@@ -40,7 +37,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="About_us.html">
                 <span class="icon"><i class="fas fa-address-card"></i></span>
                 <span class="title">About us</span>
                 </a>
@@ -58,17 +55,17 @@
                 </a>
             </li>
             <li>
-              <a href="index.html">
-              <span class="icon"><i class="fas fa-question-circle"></i></span>
-              <span class="title">Contact Information</span>
-              </a>
-          </li>
-          <li>
-            <a onclick="sessionStorage.clear()" href="">
-            <span class="icon"><i class="fas fa-question-circle"></i></span>
-            <span class="title">Log out</span>
-            </a>
-        </li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <span class="title">Registr Data</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="sessionStorage.clear()" href="">
+                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <span class="title">Log out</span>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -76,43 +73,23 @@
     <div class="main">
         <div class="topbar">
             <div class="toggle" onclick="toggleMenu();"><i class="fas fa-bars"></i></div>
-            <p>defjnh</p>
         </div>
-        <p>wdnk</p>
 
-          
+     <h1>Registr Data</h1>
 
-  <div class="container">
-    <h1>About us</h1>
-    <div class="row">
-      
-      <div class="col-8">
-        <div class="form">
-          <form>
-              <div class="form-group">
-                <label for="about_name">IATC</label>
-                <input type="text" class="form-control" id="about_name" aria-describedby="emailHelp" placeholder="İsrail Azərbaycan Təlim Mərkəzi
-                ">
-              </div>
-              <div class="form-group">
-                <label for="about_content">Content</label>
-                <textarea class="form-control" id="about_content" rows="3"></textarea>
-              </div>
-              
-              <button type="submit" id="about_submit" class="btn btn-primary">Submit</button>
-          </form>
-          </div>
-      </div>
-    </div>
-    <div class="database_info_about">
+
+    <div class="database_info_events">
       <table class="table table-striped table-dark">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">The name of the event</th>
-            <th scope="col">The event's description</th>
-            <th></th>
-            <th></th>
+           
+            <th scope="col">Selected course</th>
+            <th scope="col">Email</th>
+            <th scope="col">Full Name</th>
+            <th scope="col"> Phone Number</th>
+
+
           </tr>
         </thead>
         <tbody>
@@ -121,10 +98,9 @@
       </table>
       </div>
 
-        <p>wdnk</p>
+
     </div>
 </div>   
-
 
 
 
