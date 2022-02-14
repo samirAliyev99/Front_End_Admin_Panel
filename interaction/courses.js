@@ -42,24 +42,23 @@ var index=0;
 
    }
 
-   /*
-   <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
-   <img src="./img/8.png" alt="" class="img-fluid  mr-3 rounded ">
+   /*<!-- <div class="shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1">
+                    <img src="./img/8.png" alt="" class="img-fluid  mr-3 rounded ">
 
-   <div class="courses-info">
-       <h4>BackEnd</h4>
-       Müəllim: <strong>Asaf Amir</strong>
-       <div class="time">
-           <p class="course-info"><span class="week"><i class="fas fa-desktop ml-3"></i><span>15
-                       həftə</span></span>
-               <span class="student"><i class="fas fa-users ml-5"></i><span>30 tələbə</span></span></p>
-       </div>
-       <div class=" float-right mt-4">
-           <a href="mainBackend.html" class="detailed" target="_blank"> <strong class="my-auto ">
-                   Ətraflı</strong> <i class="fas fa-arrow-circle-right ml-2"></i></a>
-       </div>
-   </div>
-</div>
+                    <div class="courses-info">
+                        <h4>BackEnd</h4>
+                        Müəllim: <strong>Asaf Amir</strong>
+                        <div class="time">
+                            <p class="course-info"><span class="week"><i class="fas fa-desktop ml-3"></i><span>15
+                                        həftə</span></span>
+                                <span class="student"><i class="fas fa-users ml-5"></i><span>30 tələbə</span></span></p>
+                        </div>
+                        <div class=" float-right mt-4">
+                            <a href="mainBackend.html" class="detailed" target="_blank"> <strong class="my-auto ">
+                                    Ətraflı</strong> <i class="fas fa-arrow-circle-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
 */
    
 //             // To send front starts
@@ -228,6 +227,7 @@ var index=0;
 
                 // sessionStorage.setItem("key", JSON.stringify(sending_data))
                 location.href="../mainPage/mainFullstack.html";
+                
 
 
              }) 
