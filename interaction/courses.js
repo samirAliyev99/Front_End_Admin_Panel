@@ -63,7 +63,7 @@ var index=0;
    
 //             // To send front starts
             const div1= $('<div>', {
-                class: 'shadow-sm courses-card col-md-5 d-flex bg-light m-4 p-3 rounded border-1'
+                class: "shadow-sm courses-card col-lg-5 d-flex bg-light m-4 p-3 rounded border-1"
                });
 
 

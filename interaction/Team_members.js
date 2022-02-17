@@ -86,6 +86,7 @@ var index=0;
 
             // link facebook
              const div6=  $('<a>', {
+                href: "https://www.facebook.com/abdullayevrs"
             });
 
             div5.append(div6)
@@ -116,6 +117,7 @@ var index=0;
             // link linkedin
 
             const div10=  $('<a>', {
+                href: "https://www.linkedin.com/in/abdullayevrs/"
             });
 
             div5.append(div10)
@@ -177,7 +179,8 @@ var index=0;
 
                 const div18= $('<button>', {
                     class:"aboutMe",
-                    text:"Haqqında"
+                    text:"Haqqında",
+                    //href: "https://www.linkedin.com/in/abdullayevrs/"
                 });
 
                 div17.append(div18);

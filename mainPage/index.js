@@ -13,9 +13,3 @@ $('.menu').click(function () {
     $('.links').toggleClass("responsive");
     return false;
 });
-
-
-//Login form
-$('.dropdown-list-item').on('click', function() {
-    $('.dropdown-select span').text($(this).attr('data-course'));
-});

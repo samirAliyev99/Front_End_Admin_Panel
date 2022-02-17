@@ -20,7 +20,7 @@ var index=0;
 
           // To send front starts
             const div1= $('<div>', {
-              class: 'col-lg-4 col-md-4 col-sm-12 mb-4 events'
+              class: 'col-lg-4 col-md-6 col-sm-12 mb-4 events'
              });
           
            const div2=  $('<div>', {

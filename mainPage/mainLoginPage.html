@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./css/loginStyle.css">
     <link rel="stylesheet" href="./css/navStyle.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="index.js" defer></script>
+
+    <script src="loginForm.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="../interaction/registration_form.js" defer type="module"></script>
@@ -48,58 +49,59 @@
         </div>
     </nav>
     <!--Nav ends-->
+
     <section id="login-form">
-    <div class="login-box">
-        <h2>Qeydiyyat Formu</h2>
-        <form action="#">
-            <div class="user-box dropdown">
-                <div class="dropdown-select">
-                    <span class="select">
-                        Select a course
-                    </span>
-                    <i class="fa fa-caret-down icon"></i>
+        <div class="login-box">
+            <h2>Qeydiyyat Formu</h2>
+            <form name="myForm" action="#" onsubmit="return validate_form ()">
+                <div class="user-box dropdown">
+                    <div class="dropdown-select">
+                        <span class="select">
+                            Select a course
+                        </span>
+                        <i class="fa fa-caret-down icon"></i>
+                    </div>
+                    <div class="dropdown-list" id="course_name">
+                        <div class="dropdown-list-item" data-course="Back End">
+                            Back End
+                        </div>
+                        <div class="dropdown-list-item" data-course="Front End">
+                            Front End
+                        </div>
+                        <div class="dropdown-list-item" data-course="Full Stack">
+                            Full Stack
+                        </div>
+                        <div class="dropdown-list-item" data-course="UI /UX Design">
+                            UI /UX Design
+                        </div>
+                        <div class="dropdown-list-item" data-course="Mobile Development">
+                            Mobile Development
+                        </div>
+                        <div class="dropdown-list-item" data-course="Digital Marketing">
+                            Digital Marketing
+                        </div>
+                    </div>
                 </div>
-                <div class="dropdown-list" id="course_name">
-                    <div class="dropdown-list-item" data-course="Back End">
-                        Back End
-                    </div>
-                    <div class="dropdown-list-item" data-course="Front End">
-                        Front End
-                    </div>
-                    <div class="dropdown-list-item" data-course="Full Stack">
-                        Full Stack
-                    </div>
-                    <div class="dropdown-list-item" data-course="UI /UX Design">
-                        UI /UX Design
-                    </div>
-                    <div class="dropdown-list-item" data-course="Mobile Development">
-                        Mobile Development
-                    </div>
-                    <div class="dropdown-list-item" data-course="Digital Marketing">
-                        Digital Marketing
-                    </div>
+                <div class="user-box">
+                    <input type="text" name="name" id="name" >
+                    <label for="name">Full Name</label>
                 </div>
-            </div>
-            <div class="user-box" >
-                <input type="text" name="name" id="name" required>
-                <label for="name">Full Name</label>
-            </div>
-            <div class="user-box">
-                <input type="tel" name="tel" id="tel" required>
-                <label for="tel">Phone Number</label>
-            </div>
-            <div class="user-box">
-                <input type="email" name="email" id="email" required>
-                <label for="email">Email</label>
-            </div>
-            <a href id="send">
-                Send 
-            </a>
-        </form>
-    </div>
-</section>
-     <!--Footer begins-->
-     <footer class="footer">
+                <div class="user-box">
+                    <input type="tel" name="tel" id="tel" pattern="(+994) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    <label for="tel">Phone Number</label>
+                </div>
+                <div class="user-box">
+                    <input type="email" name="email" id="email" >
+                    <label for="email">Email</label>
+                </div>
+                <button type="submit">
+                    Send
+                </button>
+            </form>
+        </div>
+    </section>
+    <!--Footer begins-->
+    <footer class="footer">
         <div>
             <div>
                 <div class="row align-items-center">
@@ -108,10 +110,10 @@
                     </div>
                     <div class="icons">
                         <ul id="social_links">
-                            <li class="icon-link fb"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="icon-link fb"><a href="https://www.facebook.com/iatc.edu.az"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li class="icon-link twit"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li class="icon-link insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="icon-link linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li class="icon-link insta"><a href="https://www.instagram.com/iatceduaz/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="icon-link linkedin"><a href="https://www.linkedin.com/company/iatc-edu/"><i class="fa-brands fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -119,6 +121,13 @@
         </div>
     </footer>
     <!--Footer ends-->
+
+    <script>
+        $('.menu').click(function () {
+            $('.links').toggleClass("responsive");
+            return false;
+        });
+    </script>
 </body>
 
 </html>
