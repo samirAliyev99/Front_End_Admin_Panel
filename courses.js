@@ -39,7 +39,7 @@ document.querySelector("#course_submit").addEventListener("click",function(){
 
     for (let [check_key,check_values] of Object.entries(obj_check)){
         if(check_key!=data){
-            location.href = '/Log_in/Log_In.html';
+            location.href = './Log_in/Log_In.html';
 
         }
     }
