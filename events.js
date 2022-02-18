@@ -24,7 +24,7 @@ document.querySelector("#event_submit").addEventListener("click",function(e){
 
     for (let [check_key,check_values] of Object.entries(obj_check)){
         if(check_key!=data){
-            location.href = '/Log_in/Log_In.html';
+            location.href = './Log_in/Log_In.html';
 
         }
     }
